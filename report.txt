@@ -1,1 +1,0 @@
-Port 3389: Close RDP to the internet, use VPN instead.
