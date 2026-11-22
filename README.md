@@ -15,19 +15,20 @@ and suggests a fix for each one.
 
 ```
 python cli.py
+python cli.py path/to/scan_data.txt
+python cli.py scan/sample_data.txt -o my_report.txt
+python cli.py --help
 ```
 
-The tool reads `scan/sample_data.txt` and writes `report.txt`.
-
-## Example output
-
+By default the tool reads `scan/sample_data.txt` and writes `report.txt`.
 ```
-(paste your real output here)
+Risky ports found: ['3389']
+Port 3389: Close RDP to the internet, use VPN instead.
+Report saved to report.txt
 ```
-
 ## Roadmap
 
-- [ ] Choose the input file from the command line
+- [x] Choose the input file from the command line
 - [ ] Show the host for each risky port
 - [ ] Add more risky ports
 - [ ] Add tests
